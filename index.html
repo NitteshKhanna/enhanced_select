@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var prefillOptions = ["Option 1", "Option 3"];
+            var selectElement = $('.sampleSelect2');
+
+            $.each(prefillOptions, function(index, value) {
+            selectElement.append('<option selected="selected">' + value + '</option>');
+            }
+            );
+            $('.sampleSelect2').select2({
+                multiple: true
+            });
+        });
+    </script>
+</head>
+</head>
+<body>
+    <h1>Normal Select</h1>
+
+    <select name="" id="">
+        <option value="none">Select your option</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="other">other</option>
+    </select>
+    <h1> Select2</h1>
+    <select id="sampleSelect2" class="sampleSelect2" multiple style="width: 30vw;">
+        <option value="none">Select your option</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="other">other</option>
+    </select>
+    <h1>Enhanced Select</h1>
+        <select name="" id="enhanced_select">
+            <option value="none">Select your option</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+            <option value="z">z</option>
+        </select>
+    <script src="dist/js/app.js"></script>
+</body>
+</html>

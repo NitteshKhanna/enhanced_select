@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "es2015",
+      "outDir": "./dist/js",
+      "rootDir": "./src/ts",
+      "strict": true
+    },
+    "include": ["src/ts"],
+    "exclude": ["dist/js"]
+}

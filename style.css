@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+html body 
+{
+    margin: 0;
+    padding: 5vw;
+}
+
+.es_parent .eselect
+{
+    padding: 5px;
+    width: max-content;
+    min-width: 10vw;
+    border-radius: 5px;
+    font-weight: 400;
+    border: darkgray 1px solid;
+    cursor: pointer;
+}
+
+.es_parent .eselect:focus
+{
+    outline: none;
+}
+
+.es_parent .eselect .es_other_option
+{
+    background-color: lightgray;
+}
+
+.es_parent .es_selected_label .es_selected
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.es_parent .es_selected_label .es_selected .es_selector_badge
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    
+    background-color: rgba(211, 211, 211, 0.411);
+    border-radius: .2rem;
+    margin-left: .5rem;
+    font-size: .8rem;
+    
+}
+
+.es_parent .es_selected_label .es_selected .es_selector_badge .span_closer 
+{
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.es_parent .es_other_input
+{
+    display: block;
+    width: 15rem;
+}
+
+.es_parent .es_other_input::placeholder
+{
+    font-size: .7rem;
+}
+
+.es_parent .es_hidden_input
+{
+    display: none;
+    pointer-events: none;
+    cursor: not-allowed;
+    width: 100vw;
+}
